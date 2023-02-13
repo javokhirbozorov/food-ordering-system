@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "gitignore": "^0.7.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "food-ordering-system",
+  "description": "A Full Stack food ordering app for restaurants. MERN",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javokhirbozorov/food-ordering-system.git"
+  },
+  "author": "Javokhir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/javokhirbozorov/food-ordering-system/issues"
+  },
+  "homepage": "https://github.com/javokhirbozorov/food-ordering-system#readme"
+}

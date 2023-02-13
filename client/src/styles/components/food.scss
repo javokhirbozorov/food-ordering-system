@@ -1,0 +1,82 @@
+.foodCard{
+    border-radius: 10px;
+    box-shadow: 2px 3px 20px 4px #88888888;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 1rem;
+    transition-duration: 100ms;
+
+    &__top{
+        cursor: pointer;
+    }
+
+ 
+
+    &__params{
+        .foodCard__quantity{
+            width: 100%;
+            select{
+
+                width: 100%;
+            }
+        }
+    }
+    &__params, &__bottom{
+        select{
+            padding: 10px;
+            text-align: center;
+            border-color: #88888888;
+            border-radius: 8%;
+        }
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        div{
+            margin: 8px;
+        }
+    }
+    &__bottom{
+        .price{
+        width: 100%;
+        p{
+            margin: auto 0;
+            color: green;
+        }
+        }
+    
+        .add-to-cart-btn{
+            text-decoration: none;
+            border-radius: 8px;
+            border: none;
+            color: white;
+            background-color: red;
+            padding: 10px;
+            width: 100%;
+            font-size: small;
+        }
+    }
+    
+
+ &__modal{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+
+
+ }
+}
+
+
+
+.foodCard:hover{
+    transform: scale(1.02);
+    box-shadow: 2px 3px 30px 4px #88888888;
+}
+
+
+
