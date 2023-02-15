@@ -18,13 +18,13 @@ export default function Food({food}){
       <div onClick={handleShow} className="foodCard__top">
 
       <h2 className="foodCard__header">{food.name}</h2>
-      <img  src={food.image} alt="" srcset="" />
+      <img  src={food.image} alt=""  />
       </div>
 
       <div className="foodCard__params">
         <div className="foodCard_size">
           <p>Size</p>
-          <select value={size} onChange={e => setSize(e.target.value)}>
+          <select key={food._id} value={size} onChange={e => setSize(e.target.value)}>
             {food.sizes.map(size =>{
               return <option value={size}>{size}</option>
             })}
@@ -33,7 +33,7 @@ export default function Food({food}){
 
         <div className="foodCard__quantity">
           <p>Qty</p>
-          <select value={quantity} onChange={e => setQuantity(e.target.value)} name="" id="">
+          <select key={food._id} value={quantity} onChange={e => setQuantity(e.target.value)} name="" id="">
 
             {
               [...Array(10).keys()].map((x,i) => {

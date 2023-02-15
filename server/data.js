@@ -1,6 +1,7 @@
-const menuData = [
+const menuData = {
+   menu: [
     {
-        "name":"Kebab1",
+        "name":"Kebab",
         "sizes":[
             "small",
             "medium",
@@ -20,7 +21,7 @@ const menuData = [
         "description":"Beef kebab very nice"
     },
     {
-        "name":"Kebab2",
+        "name":"Kebab",
         "sizes":[
             "small",
             "medium",
@@ -40,7 +41,7 @@ const menuData = [
         "description":"Beef kebab very nice"
     },
     {
-        "name":"Kebab3",
+        "name":"Kebab",
         "sizes":[
             "small",
             "medium",
@@ -60,7 +61,7 @@ const menuData = [
         "description":"Beef kebab very nice"
     },
     {
-        "name":"Kebab4",
+        "name":"Kebab",
         "sizes":[
             "small",
             "medium",
@@ -80,5 +81,5 @@ const menuData = [
         "description":"Beef kebab very nice"
     }
 
-]
+]}
 export default menuData
