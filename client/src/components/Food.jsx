@@ -1,17 +1,23 @@
 import React, {useState} from "react"
-
+import { useDispatch, useSelector } from "react-redux";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-
+import { addToCartAction } from "../actions/cartActions";
 
 export default function Food({food}){
 
-
+  const cartState = useSelector(state =>state.cartReducer)
   const [size, setSize] = useState('medium')
   const [quantity, setQuantity] = useState(1)
   const [show, setShow] = useState(false)
   const handleShow = () => setShow(true)
   const handleClose = () => setShow(false)
+
+const dispatch = useDispatch()
+  function addToCart(){
+    dispatch(addToCartAction(food, quantity, size))
+
+  }
   return(
 
     <div className="foodCard">
@@ -53,7 +59,7 @@ export default function Food({food}){
           <p>Price: £{food.prices[0][size] * quantity}</p>
         </div>
 
-        <button  className="add-to-cart-btn"> ADD TO CART</button>
+        <button onClick={()=>{addToCart()}} className="add-to-cart-btn"> ADD TO CART</button>
       </div>
 
 

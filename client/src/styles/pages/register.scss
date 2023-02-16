@@ -1,0 +1,26 @@
+.register{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 90vw;
+    &-form{
+        width: 50%
+    }
+
+    &-heading { 
+        margin: 10px;
+        text-align: center;
+    }
+
+
+    &-form{
+        box-shadow: 2px 5px 20px #88888888;
+        padding: 40px;
+        border-radius: 8%;
+    }
+
+    .form-control{
+        margin: 5px 0;
+    }
+}

@@ -1,0 +1,87 @@
+.cart{
+
+    &__main-container{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-around;
+
+
+          
+        }
+
+        &__list{
+            display: flex;
+            flex-flow: wrap;
+            justify-content: space-between;
+            padding: 1rem;
+            align-items: center;
+            border-radius: 1rem;
+            box-shadow: 2px 5px 30px #9494946e;
+
+            p span{
+                color: green;
+                font-size: 900;
+                background-color: yellow;
+            }
+            // line-height: 1;
+            p{
+                margin: 0;
+            }
+
+            a{
+                margin: 0 1rem;
+                padding: 0.3rem;
+
+                text-decoration: none;
+            }
+           
+            }
+
+            .delete-btn{
+                color: white;
+                background-color: rgb(199, 43, 95);
+                border-radius: 18%;
+                 box-shadow: 0px 3px 10px #a9a9a9;
+
+            }
+            &__image{
+                img{
+                    width: 30%;
+                    box-shadow: 0px 3px 10px #c1c1c18c;
+                    border-radius: 50%;
+
+                }
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+            }
+
+
+            &__pay-btn{
+                color: white;
+                text-decoration: none;
+                background-color: rgb(68, 168, 68);
+                padding: 0.5rem 2rem;
+                border-radius: 18%;
+                box-shadow: 2px 5px 30px #88888888;
+               
+
+            }
+
+            .quantity{
+                .plus{
+                    color: green;
+                    font-weight: 900;
+                       box-shadow: 0px 3px 10px #c1c1c18c;
+                       border-radius: 50%;
+                }
+
+                .minus{
+                    color: red;
+                    font-weight: 900;
+                    box-shadow: 0px 3px 10px #c1c1c18c;
+                     border-radius: 50%;
+                }
+            }
+    }
+
