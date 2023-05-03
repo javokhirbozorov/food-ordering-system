@@ -1,12 +1,13 @@
 
 
 import {applyMiddleware, combineReducers, compose, createStore} from 'redux'
-import{configureStore} from '@reduxjs/toolkit'
+
 import thunk from 'redux-thunk'
 import {getAllFoodReducer} from './reducers/foodReducers'
-import {composeWithDevTools} from 'redux-devtools-extension'
+
 import { cartReducer } from './reducers/cartReducer'
 import { getAllUsersReducer, userLoginReducer, userRegisterReducer } from './reducers/userReducer'
+import { getAllOrdersReducer, getUserOrdersReducer, placeOrderReducer } from './reducers/orderReducers'
 
 
 const finalReducer = combineReducers({
@@ -14,7 +15,10 @@ const finalReducer = combineReducers({
     cartReducer:cartReducer,
     userRegisterReducer:userRegisterReducer,
     userLoginReducer:userLoginReducer,
-    getAllUserReducer: getAllUsersReducer
+    getAllUserReducer: getAllUsersReducer,
+    placeOrderReducer:placeOrderReducer,
+    getUserOrdersReducer:getUserOrdersReducer,
+    getAllOrdersReducer:getAllOrdersReducer
 })
 
 
