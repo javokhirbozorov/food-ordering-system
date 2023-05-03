@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import Cart from "./pages/Cart";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap'
 import { ErrorBoundary } from "./components/ErrorBoundary";
 import Login from "./pages/Login";
 import Register from "./pages/Register";

@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllFoodReducer } from "../actions/foodActions";
 import Food from "../components/Food";
+import Loading from "../components/Loading";
+import Error from "../components/Error";
 
 
 export default function Menu() {
@@ -17,8 +19,8 @@ export default function Menu() {
     return (
         <div>
             <h1>Menu</h1>
-            {loading ? (<h1>Loading...</h1>)
-                : error ? (<h2>Something Went Wrong!</h2>) :
+            {loading ? (<Loading/>)
+                : error ? (<Error/>) :
                     <div className="menu">
 
 
