@@ -29,7 +29,7 @@ const initialState = {
         : null,
     }, 
     cartReducer:{
-        cartItems:localStorage.getItem('cartItems') ? JSON.parse(localStorage.getItem('cartItems')) : []
+        cartItems:sessionStorage.getItem('cartItems') ? JSON.parse(sessionStorage.getItem('cartItems')) : []
     },
   };
   

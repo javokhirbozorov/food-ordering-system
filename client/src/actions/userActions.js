@@ -39,7 +39,7 @@ export const userLogin = (user)=>{
 export const logoutUser=()=>dispatch=>{
 
 
-    sessionStorage.removeItem('currentUser')
+    sessionStorage.clear()
     window.location.href='/login'
 
 }
