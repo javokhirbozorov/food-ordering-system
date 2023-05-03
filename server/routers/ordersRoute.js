@@ -8,6 +8,7 @@ import {v4 as uuidv4} from 'uuid'
 
 const stripe = Stripe(process.env.STRIPE_SECRET_KEY);
 import Order from '../models/orderModel.js';
+import expressAsyncHandler from 'express-async-handler';
 
 
 orderRouter.post("/placeOrder", async(req, res) => {
@@ -62,7 +63,7 @@ orderRouter.post("/placeOrder", async(req, res) => {
 });
 
 
-orderRouter.post("/getUserOrders", async(req, res) => {
+orderRouter.post("/getUserOrders", expressAsyncHandler (async(req, res) => {
   const {userid} = req.body
   try {
       const orders = await Order.find({userid : userid}).sort({_id : -1})
@@ -70,7 +71,7 @@ orderRouter.post("/getUserOrders", async(req, res) => {
   } catch (error) {
       return res.status(400).json({ message: error.message });
   }
-});
+}));
 
 orderRouter.get("/getAllOrders", async(req, res) => {
 
@@ -83,7 +84,7 @@ orderRouter.get("/getAllOrders", async(req, res) => {
 
 });
 
-orderRouter.post("/deliverOrder", async(req, res) => {
+orderRouter.post("/deliverOrder", expressAsyncHandler(  async(req, res) => {
 
     const orderid = req.body.orderid
     try {
@@ -97,7 +98,7 @@ orderRouter.post("/deliverOrder", async(req, res) => {
         
     }
   
-});
+}));
 
 
 

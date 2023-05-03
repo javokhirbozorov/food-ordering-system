@@ -11,6 +11,7 @@ import 'bootstrap'
 import { ErrorBoundary } from "./components/ErrorBoundary";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import Orders from "./pages/Orders";
 // import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path="cart" element={<Cart/>}/>
             <Route path="login" element={<Login/>}/>
             <Route path="register" element={<Register/>}/>
+            <Route path="orders" element={<Orders/>}/>
          </Routes>
       </BrowserRouter>
     {/* </ErrorBoundary> */}

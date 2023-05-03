@@ -1,0 +1,125 @@
+[{
+  "_id": {
+    "$oid": "63ea63521ad285ceb95771d6"
+  },
+  "name": "Kebab",
+  "sizes": [
+    "small",
+    "medium",
+    "large"
+  ],
+  "prices": [
+    {
+      "small": 5,
+      "medium": 8,
+      "large": 12
+    }
+  ],
+  "category": "non-v",
+  "image": "https://www.dominos.co.in/files/items/Pepper_Barbeque.jpg",
+  "description": "Beef kebab very nice",
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676305234157"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676305234157"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "63ea63521ad285ceb95771d7"
+  },
+  "name": "Soup",
+  "sizes": [
+    "small",
+    "medium",
+    "large"
+  ],
+  "prices": [
+    {
+      "small": 5,
+      "medium": 8,
+      "large": 12
+    }
+  ],
+  "category": "non-v",
+  "image": "https://www.dominos.co.in/files/items/Pepper_Barbeque.jpg",
+  "description": "Beef kebab very nice",
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676305234159"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676305234159"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "63ea63521ad285ceb95771d8"
+  },
+  "name": "Pizza",
+  "sizes": [
+    "small",
+    "medium",
+    "large"
+  ],
+  "prices": [
+    {
+      "small": 5,
+      "medium": 8,
+      "large": 12
+    }
+  ],
+  "category": "non-v",
+  "image": "https://www.dominos.co.in/files/items/Pepper_Barbeque.jpg",
+  "description": "Beef kebab very nice",
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676305234159"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676305234159"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "63ea63521ad285ceb95771d9"
+  },
+  "name": "Salad",
+  "sizes": [
+    "small",
+    "medium",
+    "large"
+  ],
+  "prices": [
+    {
+      "small": 5,
+      "medium": 8,
+      "large": 12
+    }
+  ],
+  "category": "non-v",
+  "image": "https://www.dominos.co.in/files/items/Pepper_Barbeque.jpg",
+  "description": "Beef kebab very nice",
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1676305234159"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1676305234159"
+    }
+  }
+}]

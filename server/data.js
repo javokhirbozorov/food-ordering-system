@@ -21,7 +21,7 @@ const menuData = {
         "description":"Beef kebab very nice"
     },
     {
-        "name":"Kebab",
+        "name":"Soup",
         "sizes":[
             "small",
             "medium",
@@ -41,7 +41,7 @@ const menuData = {
         "description":"Beef kebab very nice"
     },
     {
-        "name":"Kebab",
+        "name":"Salad",
         "sizes":[
             "small",
             "medium",
@@ -61,7 +61,7 @@ const menuData = {
         "description":"Beef kebab very nice"
     },
     {
-        "name":"Kebab",
+        "name":"Pizza",
         "sizes":[
             "small",
             "medium",
