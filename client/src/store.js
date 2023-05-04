@@ -19,7 +19,6 @@ const finalReducer = combineReducers({
     placeOrderReducer:placeOrderReducer,
     getUserOrdersReducer:getUserOrdersReducer,
     getAllOrdersReducer:getAllOrdersReducer,
-    devTools:false
 })
 
 
