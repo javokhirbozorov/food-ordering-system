@@ -11,7 +11,13 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors());
+app.use(cors(
+  {
+    origin: 'https://dancing-narwhal-1b2eb4.netlify.app/',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization']
+  }
+));
 
 app.use("/api/menu/", menuRoute)
 app.use('/api/user/', userRoute)
