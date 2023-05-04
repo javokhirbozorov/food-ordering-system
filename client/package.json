@@ -30,7 +30,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "https://javo-food-ordering.onrender.com",
+
   "eslintConfig": {
     "extends": [
       "react-app",
