@@ -1,1 +1,1 @@
-export const baseUrl = 'https://javo-food-ordering.onrender.com/';
+export const baseUrl = 'https://javo-food-ordering.onrender.com';
