@@ -1,5 +1,6 @@
 import axios from "axios";
 import { PLACE_ORDER_FAIL, PLACE_ORDER_REQUEST, PLACE_ORDER_SUCCESS } from "../constants/orderConstants";
+import { baseUrl } from "../baseUrl";
 
 
 export const placeOrder= (token, subtotal) =>async (dispatch, getState)=>{
@@ -8,7 +9,7 @@ export const placeOrder= (token, subtotal) =>async (dispatch, getState)=>{
 
     const cartItems = getState().cartReducer.cartItems
     try{
-        const response = await axios.post('/api/orders/placeOrder', {token, subtotal, currentUser, cartItems})
+        const response = await axios.post(`${baseUrl}/api/orders/placeOrder`, {token, subtotal, currentUser, cartItems})
        dispatch({type:PLACE_ORDER_SUCCESS})
         console.log(response);
     }catch(error){
@@ -27,7 +28,7 @@ export const getUserOrders=()=>async (dispatch,getState)=>{
   dispatch({type:'GET_USER_ORDERS_REQUEST'})
   
   try {
-      const response = await axios.post('/api/orders/getUserOrders' , {userid : currentUser._id})
+      const response = await axios.post(`${baseUrl}/api/orders/getUserOrders` , {userid : currentUser._id})
 
       
       console.log(response);
@@ -45,7 +46,7 @@ export const getAllOrders=()=>async (dispatch,getState)=>{
   dispatch({type:'GET_ALLORDERS_REQUEST'})
   
   try {
-      const response = await axios.get('/api/orders/getAllOrders')
+      const response = await axios.get(`${baseUrl}/api/orders/getAllOrders`)
 
       
       console.log(response);
@@ -62,10 +63,10 @@ export const deliverOrder=(orderid)=>async dispatch=>{
 
 
     try {
-      const response = await axios.post('/api/orders/deliverOrder' , {orderid})
+      const response = await axios.post(`${baseUrl}/api/orders/deliverOrder` , {orderid})
       console.log(response);
       alert('Order Delivered')
-      const orders = await axios.get('/api/orders/getAllOrders')
+      const orders = await axios.get(`${baseUrl}/api/orders/getAllOrders`)
       dispatch({type:'GET_ALLORDERS_SUCCESS' , payload:orders.data})
     } catch (error) {
       console.log(error);
