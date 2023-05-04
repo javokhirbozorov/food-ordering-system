@@ -18,7 +18,8 @@ const finalReducer = combineReducers({
     getAllUserReducer: getAllUsersReducer,
     placeOrderReducer:placeOrderReducer,
     getUserOrdersReducer:getUserOrdersReducer,
-    getAllOrdersReducer:getAllOrdersReducer
+    getAllOrdersReducer:getAllOrdersReducer,
+    devTools:false
 })
 
 
@@ -31,6 +32,8 @@ const initialState = {
     cartReducer:{
         cartItems:sessionStorage.getItem('cartItems') ? JSON.parse(sessionStorage.getItem('cartItems')) : []
     },
+
+
   };
   
 

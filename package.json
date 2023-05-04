@@ -3,5 +3,24 @@
     "bcrypt": "^5.1.0",
     "bcryptjs": "^2.4.3",
     "react-stripe-checkout": "^2.6.3"
-  }
+  },
+  "name": "food-ordering-system",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build":"cd server && npm install && ../client && npm install && npm run build",
+    "start":"node server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javokhirbozorov/food-ordering-system.git"
+  },
+  "author": "Javokhir Bozorov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/javokhirbozorov/food-ordering-system/issues"
+  },
+  "homepage": "https://github.com/javokhirbozorov/food-ordering-system#readme",
+  "description": ""
 }
