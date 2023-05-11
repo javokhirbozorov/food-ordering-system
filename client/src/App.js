@@ -12,7 +12,7 @@ import 'bootstrap'
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Orders from "./pages/Orders";
-
+import { baseUrl } from "./baseUrl";
 function App() {
   return (
 
@@ -24,10 +24,10 @@ function App() {
       <BrowserRouter>
          <Routes>
             <Route path="/" element={<Menu/>}/>
-            <Route path="cart" element={<Cart/>}/>
-            <Route path="login" element={<Login/>}/>
-            <Route path="register" element={<Register/>}/>
-            <Route path="orders" element={<Orders/>}/>
+            <Route path={ `${baseUrl}/cart`} element={<Cart/>}/>
+            <Route path={ `${baseUrl}/login`} element={<Login/>}/>
+            <Route path={ `${baseUrl}/register`} element={<Register/>}/>
+            <Route path={ `${baseUrl}/order`} element={<Orders/>}/>
          </Routes>
       </BrowserRouter>
     {/* </ErrorBoundary> */}
