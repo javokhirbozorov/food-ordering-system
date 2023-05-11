@@ -24,10 +24,10 @@ function App() {
       <BrowserRouter>
          <Routes>
             <Route path="/" element={<Menu/>}/>
-            <Route path={ `${baseUrl}/cart`} element={<Cart/>}/>
-            <Route path={ `${baseUrl}/login`} element={<Login/>}/>
-            <Route path={ `${baseUrl}/register`} element={<Register/>}/>
-            <Route path={ `${baseUrl}/order`} element={<Orders/>}/>
+            <Route path={ `cart`} element={<Cart/>}/>
+            <Route path={ `login`} element={<Login/>}/>
+            <Route path={ `register`} element={<Register/>}/>
+            <Route path={ `order`} element={<Orders/>}/>
          </Routes>
       </BrowserRouter>
     {/* </ErrorBoundary> */}
